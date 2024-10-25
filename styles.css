@@ -1,0 +1,27 @@
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#sky {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #87ceeb, #87cefa, #00bfff);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-100vh);
+  }
+}
+
+.cloud {
+  animation: moveUp 20s linear infinite;
+}
